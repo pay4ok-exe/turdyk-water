@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  water-bot:
+    build: .
+    restart: always
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Almaty
